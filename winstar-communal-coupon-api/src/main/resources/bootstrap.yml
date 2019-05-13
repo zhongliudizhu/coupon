@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: winstar-communal-coupon-api
+
+
+info:
+  app:
+    name: @project.artifactId@
+    description: @project.description@
+    version: @project.version@
+    author: zl
+    telphone: 15398091830
+    email: 172810573@qq.com
+    qq: 172810573
