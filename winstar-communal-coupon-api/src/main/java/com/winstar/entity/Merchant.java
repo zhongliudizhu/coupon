@@ -1,7 +1,9 @@
 
 package com.winstar.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -30,6 +32,12 @@ public class Merchant {
     private String id;
 
     /**
+     * 商户号
+     */
+    @Column(columnDefinition = "varchar(50) comment '商户号'")
+    private String number;
+
+    /**
      * 商户名称
      */
     @Column(columnDefinition = "varchar(50) comment '商户名称'")
@@ -46,6 +54,12 @@ public class Merchant {
      */
     @Column(columnDefinition = "varchar(50) comment '商户备注'")
     private String remark;
+
+    /**
+     * 商户状态
+     */
+    @Column(columnDefinition = "varchar(10) comment '商户状态'")
+    private String status;
 
     /**
      * 创建时间
